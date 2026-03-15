@@ -1,0 +1,14 @@
+# Ignore build artifacts
+build/
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+
+# Visual Studio / VSCode
+.vs/
+.vscode/
+
+# Dependency caches
+Dep/

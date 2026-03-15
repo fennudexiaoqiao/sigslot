@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
 project(sigslot LANGUAGES CXX VERSION 1.0)
+    # Install CMake package config files so find_package can locate sigslot
+    install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sigslotConfig.cmake ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sigslotConfigVersion.cmake DESTINATION lib/cmake/sigslot)
+  endif()
 
 # Library type: STATIC, SHARED, INTERFACE
 set(SIGSLOT_LIBRARY_TYPE "STATIC" CACHE STRING "Library type: STATIC, SHARED or INTERFACE")
